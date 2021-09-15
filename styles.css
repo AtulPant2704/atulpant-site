@@ -8,7 +8,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
+  margin: 0px auto;
+  max-width: 85%;
+  width: 100%;
 }
 
 hr {
@@ -27,7 +29,8 @@ hr {
 }
 
 .container-center {
-  max-width: 600px;
+  max-width: 900px;
+  width: 100%;
   margin: auto;
 }
 
@@ -39,21 +42,21 @@ hr {
 }
 
 .link-primary {
-  background-color: var(--primary-color);
-  border-radius: 0.5rem;
-  color: white;
-  display: block;
   max-width: 140px;
-  margin: 1rem 1rem 1rem 0rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin: 1rem auto;
+  border-radius: 2rem;
 }
 
 .link-secondary {
-  color: var(--primary-color);
-  border-radius: 0.5rem;
-  border: 1px solid var(--primary-color);
-  display: block;
   max-width: 140px;
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 /** look into BEM naming convention for CSS **/
@@ -83,8 +86,14 @@ hr {
   font-weight: bold;
 }
 
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navigation .nav-pills {
   text-align: right;
+  margin: 0.6rem 1rem;
 }
 
 .navigation .link {
@@ -104,7 +113,7 @@ hr {
 
 .hero .hero-img {
   max-width: 80%;
-  width: 350px;
+  width: 550px;
   display: block;
   margin: auto;
 }
@@ -123,6 +132,9 @@ hr {
 
 .section {
   padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .section h1 {
@@ -137,7 +149,7 @@ hr {
 
 .footer {
   background-color: var(--primary-color);
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   color: white;
   border-top-right-radius: 1rem;
@@ -158,10 +170,22 @@ hr {
 
 /** projects **/
 .showcase-list {
+  /* padding: 2rem; */
   padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+.showcase-list h1 {
+  margin: 0.5rem;
+}
+
+.showcase-list p {
+  padding-bottom: 1rem;
 }
 
 /** blogs **/
+
 .showcase-blog {
   padding-bottom: 6rem;
 }
