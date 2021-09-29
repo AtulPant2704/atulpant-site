@@ -189,3 +189,9 @@ hr {
 .showcase-blog {
   padding-bottom: 6rem;
 }
+
+.box-model{
+  width: 70%;
+  height: 70%;
+  margin: auto 12rem;
+}

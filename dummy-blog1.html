@@ -23,52 +23,51 @@
         </ul>
     </nav>
     <header class="hero">
-        <h1 class="hero-heading">this is <span class="heading-inverted"> dummy</span> blog</h1>
+        <h1 class="hero-heading">CSS <span class="heading-inverted"> Box </span>Model</h1>
     </header>
     <article class="container-center showcase-blog">
         <p>
-          Dummy text: Its function as a filler or as a tool for comparing the
-          visual impression of different typefaces Dummy text is text that is used
-          in the publishing industry or by web designers to occupy the space which
-          will later be filled with 'real' content. This is required when, for
-          example, the final text is not yet available. Dummy text is also known
-          as 'fill text'. It is said that song composers of the past used dummy
-          texts as lyrics when writing melodies in order to have a 'ready-made'
-          text to sing with the melody. Dummy texts have been in use by
-          typesetters since the 16th century.
+          CSS box model is majorily divided into four components:-
+          <ol>
+              <li>Margin</li>
+              <li>Border</li>
+              <li>Padding</li>
+              <li>Content</li>
+          </ol>
+        </p>
+
+        <img src="/images/box-model.png" class="box-model">
+  
+        <h2>Margin</h2>
+        <p>
+            The margin is the empty space separating the element from its neighbors, and the outermost layer of the CSS box model. Its dimensions are the margin-box width and the margin-box height.
+
+            Its size can be defined by the following properties: the margin-left, margin-right, margin-top, margin-bottom properties or the shorthand margin property.
+            
+            If the shorthand property is used, and only one value is defined, then it applies to all sides of the element. If two values are defined, then the first value represents the top and bottom margins and the second represents the right and left margins. If  three values are defined, the first value represents the top margin, the second represents the left and right, and the fourth represents the bottom margin. If four values are defined, they represent the top, right, bottom, and left, respectively.
         </p>
   
-        <h2>The usefulness of nonsensical content</h2>
+        <h2>Border</h2>
         <p>
-          Dummy text is also used to demonstrate the appearance of different
-          typefaces and layouts, and in general the content of dummy text is
-          nonsensical. Due to its widespread use as filler text for layouts,
-          non-readability is of great importance: human perception is tuned to
-          recognize certain patterns and repetitions in texts. If the distribution
-          of letters and 'words' is random, the reader will not be distracted from
-          making a neutral judgement on the visual impact and readability of the
-          typefaces (typography), or the distribution of text on the page (layout
-          or type area). For this reason, dummy text usually consists of a more or
-          less random series of words or syllables. This prevents repetitive
-          patterns from impairing the overall visual impression and facilitates
-          the comparison of different typefaces. Furthermore, it is advantageous
-          when the dummy text is relatively realistic so that the layout
-          impression of the final publication is not compromised.
+            The border property lets us add and style a line around the content padding area. The thickness, color, style of this line can be defined by the border-width, border-color, and border-style properties, or you can use the shorthand border property to define all three. Border-style values include solid, dotted, dashed, double, groove, ridge, and none.
+
+            The dimensions of the border area are the border-box width and border-box height. When specified, the width and height attributes determine the perimeter of the border area. If the box-sizing property is set to border-box, you can also define the border size with min-width, max-width, min-height, and max-height.
         </p>
   
-        <h2>
-          Incomprehensibility or readability? <small>That is the question.</small>
-        </h2>
+        <h2>Padding</h2>
         <p>
-          The most well-known dummy text is the 'Lorem Ipsum', which is said to
-          have originated in the 16th century. Lorem Ipsum is composed in a
-          pseudo-Latin language which more or less corresponds to 'proper' Latin.
-          It contains a series of real Latin words. This ancient dummy text is
-          also incomprehensible, but it imitates the rhythm of most European
-          languages in Latin script. The advantage of its Latin origin and the
-          relative meaninglessness of Lorum Ipsum is that the text does not
-          attract attention to itself or distract the viewer's attention from the
-          layout.
+            Padding is the space between the border and content of an element. Padding is an important element in web design because it helps make content more visible and readable. 
+
+            An element's padding can be defined with the following properties: padding-top, padding-bottom, padding-left, padding-right, or the shorthand property padding.
+
+            If you'd like to add the same amount of padding on all four sides of the content area, then you can set the shorthand padding property with one value. If you'd like to set different amounts of padding, then you can use the long-form method.
+        </p>
+  
+        <h2>Content</h2>
+        <p>
+            The innermost rectangle, known as the content area, may contain text or other visual elements.
+
+            Its dimensions are the content width and content height. When specified, the width and height attributes determine the content edge or perimeter of the content box.  Often, the width and height aren't specified so the rendered content determines the content edge. In other words, the content area is only as wide and as at all as it needs to be to hold the content, which might be as little as one word. If the element is a block element, then the content edge can also be set with the min-width, max-width, min-height, and max-height properties. 
         </p>
       </article>
       <footer class="footer">
