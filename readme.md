@@ -7,4 +7,5 @@ So far, I know:
 1. Javascript
 1. NodeJS
 1. Repl.it
-1. Chalk
+1. HTML
+1. CSS
