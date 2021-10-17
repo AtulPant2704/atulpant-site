@@ -1,6 +1,6 @@
 # my portfolio
 
-This is the personal portfolio of mine which i am going to finish by tomorrow when i learn HTML ans CSS.
+This is my personal portfolio in making where i am going to update my skills and projects when i learn Full Stack Web Development.
 
 So far, I know:
 
